@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block body %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .card {
+        width: 300px;
+        height: 400px;
+        background-color: #fff;
+        margin: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px 10px 0 0;
+      }
+
+      .card h2 {
+        font-size: 24px;
+        font-weight: bold;
+        margin: 10px;
+      }
+
+      .card p {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 10px;
+      }
+
+      .wedding {
+        background-color: #ffe0e6;
+      }
+
+      .party {
+        background-color: #b3e5fc;
+      }
+
+      .technical {
+        background-color: #c8e6c9;
+      }
+
+      .college {
+        background-color: #f0f4c3;
+      }
+
+      .birthday {
+        background-color: #ffd54f;
+      }
+
+
+    </style>
+  </head>
+  <body>
+  <div>
+
+  </div>
+    <div class="container">
+      <div class="card wedding">
+        <img src="/static/wed2.jpg" alt="wedding image" />
+        <h2>Wedding Event</h2>
+        <p>Join us for a magical night of love and celebration as we witness the union of two souls in holy matrimony.</p>
+        <a class="btn btn-primary" href="http://127.0.0.1:8000/weddingevent" role="button">BOOK NOW</a>
+      </div>
+      <div class="card party">
+        <img src="/static/party2.jpg" alt="party image" />
+        <h2>Party Event</h2>
+        <p>Come dance the night away with us as we celebrate life, love, and everything in between!</p>
+        <a class="btn btn-primary" href="http://127.0.0.1:8000/partiesevent" role="button">BOOK NOW</a>
+      </div>
+      <div class="card technical">
+        <img src="/static/techi1.jpg" alt="technical image" />
+        <h2>Technical Event</h2>
+        <p>Get ready to learn with our amazing lineup of workshops at this year's technical event.</p>
+        <a class="btn btn-primary" href="http://127.0.0.1:8000/technicalevent" role="button">BOOK NOW</a>
+      </div>
+      <div class="card college">
+        <img src="/static/cg1.jpg" alt="college image" />
+        <h2>College Event</h2>
+        <p>Join us for a fun-filled day of games, food, and friendship as we celebrate the end</p>
+        <a class="btn btn-primary" href="http://127.0.0.1:8000/collegeevent" role="button">BOOK NOW</a>
+      </div>
+
+        <div class="card college">
+        <img src="/static/advisor.jpg" alt="advisor image" />
+        <h2>EVENT ADVISOR</h2>
+        <p>"Work is mine, and enjoyment is yours. Grab the opportunity to use me well  for better outcome."</p>
+        <a class="btn btn-primary" href="http://127.0.0.1:8000/eventadvisor" role="button">BOOK NOW</a>
+      </div>
+
+
+
+{% endblock body %}
+
+how it works
